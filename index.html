@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="MAX — цифровой помощник для сотрудников. Быстрые обращения, запись на приём и проверка статуса заявок в мессенджере MAX." />
+    <title>MAX — Цифровой Помощник</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-ornaments" aria-hidden="true">
+      <svg class="orn o1" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="ornA" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#5b7cfa" stop-opacity=".18" />
+            <stop offset="100%" stop-color="#7aa2ff" stop-opacity=".06" />
+          </linearGradient>
+        </defs>
+        <rect x="28" y="40" width="180" height="120" rx="26" fill="url(#ornA)" />
+        <path d="M88 160l-22 28 54-20" fill="url(#ornA)" />
+        <rect x="120" y="102" width="140" height="100" rx="26" fill="url(#ornA)" />
+        <path d="M200 202l-18 30 46-18" fill="url(#ornA)" />
+      </svg>
+      <svg class="orn o2" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" stroke="#5b7cfa" stroke-opacity=".12" stroke-width="10">
+          <rect x="30" y="60" width="240" height="200" rx="24" />
+          <line x1="30" y1="110" x2="270" y2="110" />
+          <line x1="80" y1="40" x2="80" y2="90" />
+          <line x1="220" y1="40" x2="220" y2="90" />
+          <g stroke-width="8" stroke-opacity=".1">
+            <line x1="60" y1="150" x2="240" y2="150" />
+            <line x1="60" y1="180" x2="240" y2="180" />
+            <line x1="60" y1="210" x2="200" y2="210" />
+          </g>
+        </g>
+      </svg>
+      <svg class="orn o3" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" stroke="#5b7cfa" stroke-opacity=".12" stroke-width="12" stroke-linecap="round">
+          <circle cx="140" cy="140" r="72" />
+          <line x1="192" y1="192" x2="260" y2="260" />
+        </g>
+      </svg>
+      <svg class="orn o4" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" stroke="#5b7cfa" stroke-opacity=".12" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="110" cy="100" r="34" />
+          <path d="M54 206c0-36 29-65 66-65s66 29 66 65v18H54z" />
+        </g>
+        <g fill="none" stroke="#7aa2ff" stroke-opacity=".10" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="198" cy="120" r="24" />
+          <path d="M160 206c0-28 22-50 50-50s50 22 50 50v14H160z" />
+        </g>
+      </svg>
+      <svg class="orn o5" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="personGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#7aa2ff" stop-opacity=".12" />
+            <stop offset="100%" stop-color="#5b7cfa" stop-opacity=".06" />
+          </linearGradient>
+        </defs>
+        <circle cx="120" cy="110" r="30" fill="none" stroke="#5b7cfa" stroke-opacity=".12" stroke-width="10" />
+        <path d="M60 210c0-34 26-62 60-62s60 28 60 62v16H60z" fill="url(#personGrad)" stroke="#5b7cfa" stroke-opacity=".08" />
+      </svg>
+    </div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">M</div>
+          <div class="brand-text">
+            <span class="brand-name">MAX</span>
+            <span class="brand-tag">Цифровой помощник</span>
+          </div>
+        </div>
+        <nav class="site-nav">
+          <a href="#features">Возможности</a>
+          <a href="#benefits">Преимущества</a>
+          <a href="#illustrations">Иллюстрации</a>
+          <a href="#contact">Контакты</a>
+          <a class="btn btn-primary" href="#get-started">Запустить</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="get-started" class="section hero reveal" style="--reveal-delay: .05s">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>Цифровой Помощник: Чат‑Бот для Эффективного Взаимодействия с Администрацией</h1>
+            <p class="subtitle">Для сотрудников любой организации: отправляйте обращения, записывайтесь на приём и отслеживайте статус заявок прямо в мессенджере MAX.</p>
+            <div class="cta">
+              <a class="btn btn-primary" href="#qr">Сканировать QR в MAX</a>
+              <a class="btn btn-ghost" href="#features">Узнать возможности</a>
+            </div>
+            <ul class="highlights">
+              <li>
+                <span class="icon" aria-hidden="true">&#9989;</span>
+                Без формальностей — всё в привычном чате
+              </li>
+              <li>
+                <span class="icon" aria-hidden="true">&#128274;</span>
+                Данные только для вашей организации
+              </li>
+              <li>
+                <span class="icon" aria-hidden="true">&#9201;</span>
+                Быстрое реагирование и прозрачность
+              </li>
+            </ul>
+          </div>
+          <div class="hero-qr reveal" id="qr" style="--reveal-delay: .15s">
+            <div class="qr-card">
+              <img src="assets/qr-max.png" alt="QR код для запуска бота MAX в мессенджере MAX" />
+              <div class="qr-steps">
+                <span class="step"><b>1.</b> Откройте приложение MAX</span>
+                <span class="step"><b>2.</b> Выберите сканер QR</span>
+                <span class="step"><b>3.</b> Наведите камеру на код</span>
+              </div>
+            </div>
+            <p class="qr-note">Нет ссылки? Не требуется — просто используйте QR для запуска диалога с ботом.</p>
+          </div>
+        </div>
+        <div class="bg-shape" aria-hidden="true"></div>
+      </section>
+
+      <!-- Features -->
+      <section id="features" class="section reveal" style="--reveal-delay: .05s">
+        <div class="container">
+          <h2>Возможности бота</h2>
+          <div class="grid features-grid">
+            <article class="card feature reveal" style="--reveal-delay: .1s">
+              <div class="feature-icon" aria-hidden="true">
+                <!-- inbox icon -->
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 12h-6l-2 3h-4l-2-3H2" />
+                  <path d="M5.45 5.11 2 12v5a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-5l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z" />
+                </svg>
+              </div>
+              <h3>Подать обращение/жалобу</h3>
+              <p>Отправьте сообщение администрации прямо в чате. При необходимости прикрепите фото или документ — остальное возьмёт на себя MAX.</p>
+            </article>
+
+            <article class="card feature reveal" style="--reveal-delay: .15s">
+              <div class="feature-icon" aria-hidden="true">
+                <!-- calendar icon -->
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+              </div>
+              <h3>Записаться на приём</h3>
+              <ul class="list">
+                <li>Выбор подразделения или темы</li>
+                <li>ФИО сотрудника</li>
+                <li>Дата и время, формат: очно или онлайн</li>
+                <li>Комментарий и подтверждение записи</li>
+              </ul>
+            </article>
+
+            <article class="card feature reveal" style="--reveal-delay: .2s">
+              <div class="feature-icon" aria-hidden="true">
+                <!-- search icon -->
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+              </div>
+              <h3>Получить статус заявки</h3>
+              <p>Проверка по ФИО и дате подачи обращения. MAX сообщит текущий этап обработки и ответственного.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits -->
+      <section id="benefits" class="section alt reveal" style="--reveal-delay: .05s">
+        <div class="container">
+          <h2>Преимущества</h2>
+          <div class="grid benefits-grid">
+            <div class="card reveal" style="--reveal-delay: .12s">
+              <h3>Для сотрудников</h3>
+              <ul class="list">
+                <li>Всё в одном окне мессенджера MAX</li>
+                <li>Понятные шаги и напоминания</li>
+                <li>Прозрачность статусов</li>
+                <li>Экономия времени на коммуникации</li>
+              </ul>
+            </div>
+            <div class="card reveal" style="--reveal-delay: .18s">
+              <h3>Для администрации</h3>
+              <ul class="list">
+                <li>Структурированные обращения</li>
+                <li>Сокращение нагрузки на каналы поддержки</li>
+                <li>Быстрая обратная связь</li>
+                <li>Повышение лояльности сотрудников</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Illustrations -->
+      <section id="illustrations" class="section reveal" style="--reveal-delay: .05s">
+        <div class="container">
+          <h2>Иллюстрации</h2>
+          <div class="grid gallery-grid">
+            <figure class="card gallery-card reveal" style="--reveal-delay: .12s">
+              <svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+                <defs>
+                  <linearGradient id="gradA" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#eef2ff" />
+                    <stop offset="100%" stop-color="#dbeafe" />
+                  </linearGradient>
+                  <linearGradient id="gradA2" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#5b7cfa" stop-opacity=".15" />
+                    <stop offset="100%" stop-color="#5b7cfa" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+                <rect x="0" y="0" width="600" height="360" rx="24" fill="url(#gradA)"/>
+                <circle cx="520" cy="40" r="90" fill="url(#gradA2)" />
+                <g transform="translate(70,70)">
+                  <rect x="0" y="0" width="360" height="210" rx="18" fill="#fff" stroke="#e5e7eb" />
+                  <rect x="24" y="28" width="236" height="16" rx="8" fill="#e2e8f0" />
+                  <rect x="24" y="56" width="300" height="12" rx="6" fill="#e2e8f0" />
+                  <rect x="24" y="80" width="260" height="12" rx="6" fill="#e2e8f0" />
+                  <rect x="24" y="104" width="220" height="12" rx="6" fill="#e2e8f0" />
+                  <g transform="translate(24,142)">
+                    <rect x="0" y="0" width="160" height="44" rx="10" fill="#eef2ff" stroke="#c7d2fe" />
+                    <path d="M18 22l8 8 18-18" fill="none" stroke="#5b7cfa" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <g transform="translate(200,142)">
+                    <rect x="0" y="0" width="136" height="44" rx="10" fill="#f1f5f9" />
+                    <path d="M20 14h32M20 24h26M20 34h36" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+                  </g>
+                </g>
+                <g transform="translate(450,120)">
+                  <path d="M0 50c0-27.6 22.4-50 50-50s50 22.4 50 50-22.4 50-50 50S0 77.6 0 50z" fill="#5b7cfa" fill-opacity=".1" />
+                  <path d="M32 50l14 14 28-28" stroke="#5b7cfa" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </g>
+              </svg>
+              <figcaption>Обращения в чате — просто и наглядно</figcaption>
+            </figure>
+
+            <figure class="card gallery-card reveal" style="--reveal-delay: .18s">
+              <svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+                <defs>
+                  <linearGradient id="gradB" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#eef2ff" />
+                    <stop offset="100%" stop-color="#e0f2fe" />
+                  </linearGradient>
+                </defs>
+                <rect width="600" height="360" rx="24" fill="url(#gradB)"/>
+                <g transform="translate(80,60)">
+                  <rect x="0" y="0" width="320" height="240" rx="18" fill="#fff" stroke="#e5e7eb" />
+                  <rect x="0" y="40" width="320" height="44" fill="#f8fafc" />
+                  <line x1="0" y1="40" x2="320" y2="40" stroke="#e5e7eb" />
+                  <line x1="0" y1="84" x2="320" y2="84" stroke="#e5e7eb" />
+                  <g transform="translate(20,12)" stroke="#94a3b8">
+                    <line x1="40" y1="0" x2="40" y2="24" stroke-width="4"/>
+                    <line x1="200" y1="0" x2="200" y2="24" stroke-width="4"/>
+                  </g>
+                  <g transform="translate(24,100)" fill="#e2e8f0">
+                    <rect x="0" y="0" width="64" height="44" rx="8" />
+                    <rect x="76" y="0" width="64" height="44" rx="8" />
+                    <rect x="152" y="0" width="64" height="44" rx="8" />
+                    <rect x="228" y="0" width="64" height="44" rx="8" />
+                    <rect x="0" y="56" width="64" height="44" rx="8" />
+                    <rect x="76" y="56" width="64" height="44" rx="8" />
+                  </g>
+                </g>
+                <g transform="translate(420,200)">
+                  <circle cx="0" cy="0" r="58" fill="#5b7cfa" fill-opacity=".1" />
+                  <circle cx="0" cy="0" r="44" fill="#eef2ff" stroke="#c7d2fe" />
+                  <path d="M0 0v-24M0 0h20" stroke="#5b7cfa" stroke-width="6" stroke-linecap="round" />
+                </g>
+              </svg>
+              <figcaption>Запись на приём — дата, время и формат</figcaption>
+            </figure>
+
+            <figure class="card gallery-card reveal" style="--reveal-delay: .24s">
+              <svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+                <defs>
+                  <linearGradient id="gradC" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#f1f5f9" />
+                    <stop offset="100%" stop-color="#eef2ff" />
+                  </linearGradient>
+                </defs>
+                <rect width="600" height="360" rx="24" fill="url(#gradC)"/>
+                <g transform="translate(80,70)">
+                  <rect x="0" y="0" width="300" height="200" rx="16" fill="#fff" stroke="#e5e7eb" />
+                  <rect x="24" y="28" width="220" height="14" rx="7" fill="#e2e8f0" />
+                  <rect x="24" y="56" width="260" height="12" rx="6" fill="#e2e8f0" />
+                  <rect x="24" y="80" width="200" height="12" rx="6" fill="#e2e8f0" />
+                  <g transform="translate(24,120)">
+                    <rect x="0" y="0" width="200" height="10" rx="5" fill="#e2e8f0" />
+                    <rect x="0" y="0" width="120" height="10" rx="5" fill="#5b7cfa" />
+                  </g>
+                </g>
+                <g transform="translate(430,210)">
+                  <circle cx="0" cy="0" r="58" fill="#5b7cfa" fill-opacity=".12" />
+                  <g transform="translate(14,14)">
+                    <circle cx="0" cy="0" r="34" fill="#eef2ff" stroke="#c7d2fe" />
+                  </g>
+                  <g transform="translate(36,36)">
+                    <line x1="0" y1="0" x2="36" y2="36" stroke="#5b7cfa" stroke-width="8" stroke-linecap="round" />
+                  </g>
+                </g>
+              </svg>
+              <figcaption>Статусы по ФИО и дате подачи</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section reveal" style="--reveal-delay: .05s">
+        <div class="container contact">
+          <h2>Контакты</h2>
+          <div class="contact-card">
+            <div class="contact-person">
+              <div class="avatar" aria-hidden="true">GA</div>
+              <div>
+                <div class="person-name">Гизатов Амир Радикович</div>
+                <div class="person-role">Контакт для связи по боту MAX</div>
+              </div>
+            </div>
+            <div class="contact-actions">
+              <a class="contact-link" href="mailto:samquinezis@mail.ru">samquinezis@mail.ru</a>
+              <a class="contact-link" href="tel:+79397351889">+7 (939) 735‑18‑89</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> Гизатов Амир Радикович</span>
+        <nav class="footer-nav">
+          <a href="#get-started">К началу</a>
+          <a href="#features">Возможности</a>
+          <a href="#contact">Контакты</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
